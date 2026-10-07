@@ -1,0 +1,36 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+python-dotenv
+pandas
+numpy
+scikit-learn
+joblib
+
+
+
+pollution_backend/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── database.py
+│   ├── models.py
+│   ├── schemas.py
+│   ├── crud.py
+│   ├── features.py
+│   ├── ml_model.py
+│   │
+│   └── routes/
+│       ├── __init__.py
+│       ├── data.py
+│       └── prediction.py
+│
+├── model/
+│   └── pollution_model.pkl
+│
+├── .env
+├── .gitignore
+├── requirements.txt
+└── README.md
